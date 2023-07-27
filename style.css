@@ -1,0 +1,22 @@
+.user {
+    width: 100%;
+    max-width: 460px;
+
+    padding: 0 40px 40px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 12px;
+
+}
+
+.user h1 {
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.user p {
+    font-size: 18px;
+    font-weight: 300;
+}
