@@ -14,8 +14,8 @@ class SelfTypingElement extends HTMLSpanElement {
   }
 
   static get typeInterval() {
-    const randomMs = 100 * Math.random()
-    return randomMs < 50 ? 10 : randomMs
+    const randomMs = 1000 * Math.random()
+    return randomMs < 500 ? 100 : randomMs
   }
 
   static sleep(time) {
@@ -43,14 +43,14 @@ class SelfTypingElement extends HTMLSpanElement {
   }
 
   async init() {
-    await SelfTypingElement.sleep(SelfTypingElement.typeInterval * 10)
+    await SelfTypingElement.sleep(SelfTypingElement.typeInterval)
     this.parentNode.appendChild(this.cursor_node)
     return this.type()
   }
 
   async type() {
     if (this.queue_node.textContent == '') {
-      await SelfTypingElement.sleep(this.typeInterval * 10)
+      await SelfTypingElement.sleep(this.typeInterval)
       return this.destroy()
     }
 
@@ -58,7 +58,7 @@ class SelfTypingElement extends HTMLSpanElement {
     this.queue_node.textContent = this.queue_node.textContent.substring(1)
 
     this.#updateCursorPosition()
-    await SelfTypingElement.sleep(SelfTypingElement.typeInterval)
+    await SelfTypingElement.sleep(SelfTypingElement.typeInterval/this.queue_node.textContent.length)
 
     return this.type()
   }
