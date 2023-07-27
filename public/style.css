@@ -1,6 +1,6 @@
 :root {
     font-family: 'Hind', sans-serif;
-    font-size: 5vw;
+    font-size: 4vw;
     background-color: #EDA;
     color: #310;
 }
@@ -24,15 +24,17 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    row-gap: 12px;
+    row-gap: 0.5rem;
+    min-height: 100vh;
+    justify-content: center;
 
 }
 
 .user h1 {
-    font-size: 2.2rem;
+    font-size: 3rem;
     font-weight: 700;
     font-family: 'Teko', sans-serif;
-    line-height: 2em;
+    line-height: 1em;
     text-decoration: 0.1em solid underline #EC8;
 }
 
@@ -62,4 +64,22 @@
 
 section {
     margin-bottom: 0.5rem;
+}
+
+section h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    font-family: 'Teko', sans-serif;
+    line-height: 1em;
+    text-decoration: 0.1em solid underline #EC8;
+}
+
+.personal {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 0.5rem;
+    min-height: 100vh;
+    justify-content: center;
 }
