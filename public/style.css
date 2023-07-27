@@ -1,5 +1,8 @@
 :root {
     font-family: 'Hind', sans-serif;
+    font-size: 5vw;
+    background-color: #EDA;
+    color: #310;
 }
 
 :has(span[is="self-typing"]) {
@@ -18,33 +21,45 @@
 
 .user {
     width: 100%;
-    max-width: 460px;
-
-    padding: 0 40px 40px;
-
     display: flex;
     flex-direction: column;
     align-items: center;
     row-gap: 12px;
 
-    
-
 }
 
 .user h1 {
-    font-size: 28px;
+    font-size: 2.2rem;
     font-weight: 700;
     font-family: 'Teko', sans-serif;
+    line-height: 2em;
+    text-decoration: 0.1em solid underline #EC8;
 }
 
 .user p {
-    font-size: 18px;
     font-weight: 300;
 }
 
 .user__social {
     padding: 0;
-    font-size: 30px;
     display: flex;
-    gap: 20px;
+    gap: 2rem;
+    color: #F20;
+}
+
+.arrow {
+    animation: jump 2s infinite;
+}
+
+@keyframes jump {
+    from, to {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(+0.5em);
+    }
+}
+
+section {
+    margin-bottom: 0.5rem;
 }
