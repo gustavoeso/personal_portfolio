@@ -1,6 +1,6 @@
 :root {
     font-family: 'Hind', sans-serif;
-    font-size: 3.8vw;
+    font-size: max(3.8vw, 16px);
     background-color: #EDA;
     color: #310;
 }
@@ -31,7 +31,7 @@
 }
 
 .user h1 {
-    font-size: 3.2rem;
+    font-size: 3rem;
     font-weight: 700;
     font-family: 'Teko', sans-serif;
     line-height: 1em;
@@ -80,8 +80,6 @@ section h2 {
     flex-direction: column;
     align-items: center;
     row-gap: 0.5rem;
-    min-height: 100vh;
-    justify-content: center;
 }
 
 footer {
