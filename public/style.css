@@ -103,8 +103,8 @@ footer {
 }
 
 .user img {
-    width: 100%;
-    max-width: 5rem;
+    width: 35vh;
+    max-width: 40vw;
     border-radius: 50%;
     border: 0.25rem solid #EC8;
     box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.2);
